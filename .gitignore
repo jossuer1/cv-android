@@ -1,70 +1,116 @@
-# Specifies intentionally untracked files to ignore when using Git
-# http://git-scm.com/docs/gitignore
 
-*~
-*.sw[mnpcod]
-.tmp
-*.tmp
-*.tmp.*
-UserInterfaceState.xcuserstate
-$RECYCLE.BIN/
+# ================================
+# DEPENDENCIAS
+# ================================
 
-*.log
-log.txt
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
 
-/.sourcemaps
-/.versions
-/coverage
+# ================================
+# BUILDS / COMPILACIÓN
+# ================================
 
-# Ionic
-/.ionic
-/www
-/platforms
-/plugins
+dist/
+www/
+.angular/
+out-tsc/
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+# ================================
+# ANDROID / CAPACITOR
+# ================================
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-project
-*.sublime-workspace
+android/.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/
+android/.idea/
 
-# Visual Studio Code
+ios/App/Pods/
+ios/App/build/
+ios/DerivedData/
+
+
+# ================================
+# VARIABLES DE ENTORNO
+# ================================
+
+.env
+.env.local
+.env.development
+.env.production
+
+.env.*.local
+
+
+# ================================
+# IDE / EDITORES
+# ================================
+
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
 !.vscode/extensions.json
-.history/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+
+.idea/
+*.iml
 
 
-# Miscellaneous
-/.angular
-/.angular/cache
-.sass-cache/
-/.nx
-/.nx/cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# ================================
+# SISTEMA OPERATIVO
+# ================================
 
-# System files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ================================
+# LOGS
+# ================================
+
+*.log
+logs/
+
+
+# ================================
+# COBERTURA DE TESTS
+# ================================
+
+coverage/
+.nyc_output/
+
+
+# ================================
+# CACHE
+# ================================
+
+.cache/
+.parcel-cache/
+.tmp/
+temp/
+
+
+# ================================
+# ARCHIVOS TEMPORALES
+# ================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+
+# ================================
+# IONIC
+# ================================
+
+.ionic/
+

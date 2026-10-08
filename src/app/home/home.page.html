@@ -1,20 +1,470 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Curriculum Vitae</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <!-- =========================
+       PERFIL
+  ========================== -->
+  <ion-card class="profile-card">
+    <ion-card-content class="ion-text-center">
+
+      <ion-avatar class="profile-avatar">
+        <img src="assets/profile.jpg" alt="Foto de perfil de Josue Patiño" />
+      </ion-avatar>
+
+      <h1 class="profile-name">
+        Josue Alexander Patiño Rojas
+      </h1>
+
+      <p class="profile-title">
+        Estudiante de Tecnología Superior en Desarrollo de Software
+      </p>
+
+      <div class="contact-buttons ion-margin-top">
+
+        <ion-button fill="outline" size="small" href="mailto:rojasjosue55a@gmail.com">
+          <ion-icon slot="start" name="mail-outline"></ion-icon>
+          Contactar
+        </ion-button>
+
+        <ion-button fill="clear" size="small" href="https://github.com" target="_blank">
+          <ion-icon slot="icon-only" name="logo-github"></ion-icon>
+        </ion-button>
+
+        <ion-button fill="clear" size="small" href="https://linkedin.com" target="_blank">
+          <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
+        </ion-button>
+
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- =========================
+       SOBRE MÍ
+  ========================== -->
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>
+        <ion-icon name="person-outline" color="primary"></ion-icon>
+
+        Sobre Mí
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      Estudiante de Tecnología Superior en Desarrollo de Software,
+      con experiencia práctica en desarrollo de aplicaciones web,
+      desarrollo backend y soporte técnico.
+
+      <br><br>
+
+      He trabajado con tecnologías como Java, Spring Boot, C#,
+      .NET, React y bases de datos relacionales, participando en
+      proyectos institucionales y empresariales.
+
+      <br><br>
+
+      Me caracterizo por mi capacidad de adaptación, disposición
+      para aprender nuevas herramientas y facilidad para trabajar
+      de manera colaborativa en la resolución de problemas técnicos.
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <!-- =========================
+       EXPERIENCIA PROFESIONAL
+  ========================== -->
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>
+        <ion-icon name="briefcase-outline" color="primary"></ion-icon>
+
+        Experiencia Profesional
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list lines="full">
+
+        <!-- HAPPY PAY -->
+        <ion-item>
+
+          <ion-label class="ion-text-wrap">
+
+            <h2>
+              <strong>
+                Pasante / Desarrollador de Software y Soporte Técnico
+              </strong>
+            </h2>
+
+            <h3>
+              Happy Pay
+            </h3>
+
+            <p>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <em>Junio 2026 - Actualidad</em>
+            </p>
+
+            <ul>
+              <li>
+                Desarrollo de una intranet corporativa para la
+                gestión de información del personal utilizando
+                C#, .NET, React y PostgreSQL.
+              </li>
+
+              <li>
+                Desarrollo e integración de servicios backend
+                y APIs REST para la gestión de información
+                empresarial.
+              </li>
+
+              <li>
+                Integración y experimentación con soluciones
+                de automatización y chatbots mediante WhatsApp.
+              </li>
+
+              <li>
+                Soporte técnico, diagnóstico de fallas y
+                mantenimiento de dispositivos móviles.
+              </li>
+
+              <li>
+                Atención y resolución de requerimientos técnicos
+                de clientes, vendedores y coordinadores.
+              </li>
+            </ul>
+
+          </ion-label>
+
+        </ion-item>
+
+
+        <!-- ARCOTEL -->
+        <ion-item>
+
+          <ion-label class="ion-text-wrap">
+
+            <h2>
+              <strong>
+                Pasante de Tecnología
+              </strong>
+            </h2>
+
+            <h3>
+              ARCOTEL - Agencia de Regulación y Control
+              de las Telecomunicaciones
+            </h3>
+
+            <p>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <em>Abril 2026 - Junio 2026</em>
+            </p>
+
+            <ul>
+              <li>
+                Desarrollo de funcionalidades backend utilizando
+                Java y Spring Boot para un sistema institucional
+                de gestión de vacaciones e incidencias.
+              </li>
+
+              <li>
+                Implementación de lógica para el registro y
+                validación de marcaciones del personal.
+              </li>
+
+              <li>
+                Desarrollo de reglas para la gestión de permisos
+                y faltas justificadas dentro de la jornada laboral.
+              </li>
+
+              <li>
+                Mantenimiento y mejora de funcionalidades
+                existentes dentro de una aplicación institucional.
+              </li>
+            </ul>
+
+          </ion-label>
+
+        </ion-item>
+
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <!-- =========================
+       PRÁCTICAS COMUNITARIAS
+  ========================== -->
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>
+
+        <ion-icon name="heart-outline" color="primary"></ion-icon>
+
+        Prácticas Comunitarias
+
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list lines="none">
+
+        <ion-item>
+
+          <ion-label class="ion-text-wrap">
+
+            <h2>
+              <strong>
+                Soporte Técnico Informático
+              </strong>
+            </h2>
+
+            <h3>
+              U.E. Intercultural Bilingüe
+              Tránsito Amaguaña
+            </h3>
+
+            <p>
+              <ion-icon name="calendar-outline"></ion-icon>
+              <em>Septiembre - Noviembre 2025</em>
+            </p>
+
+            <p>
+              <strong>96 horas de prácticas comunitarias.</strong>
+            </p>
+
+            <p>
+              Diagnóstico, reparación y mantenimiento preventivo
+              y correctivo de equipos informáticos de la institución.
+              Instalación y configuración de sistemas operativos,
+              aplicaciones y software educativo, además de soporte
+              técnico al personal administrativo y docente.
+            </p>
+
+          </ion-label>
+
+        </ion-item>
+
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <!-- =========================
+       EDUCACIÓN
+  ========================== -->
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>
+
+        <ion-icon name="school-outline" color="primary"></ion-icon>
+
+        Educación
+
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list lines="none">
+
+        <ion-item>
+
+          <ion-label class="ion-text-wrap">
+
+            <h2>
+              <strong>
+                Tecnología Superior en Desarrollo de Software
+              </strong>
+            </h2>
+
+            <h3>
+              Escuela Politécnica Nacional - ESFOT
+            </h3>
+
+            <p>
+              Cursando actualmente el 5.º nivel.
+            </p>
+
+          </ion-label>
+
+        </ion-item>
+
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+
+  <!-- =========================
+       HABILIDADES
+  ========================== -->
+  <ion-card>
+
+    <ion-card-header>
+      <ion-card-title>
+
+        <ion-icon name="code-slash-outline" color="primary"></ion-icon>
+
+        Habilidades Técnicas
+
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <!-- DESARROLLO -->
+      <p>
+        <strong>Desarrollo de Software</strong>
+      </p>
+
+      <div class="chips-container ion-margin-bottom">
+
+        <ion-chip color="primary">
+          Java
+        </ion-chip>
+
+        <ion-chip color="primary">
+          Spring Boot
+        </ion-chip>
+
+        <ion-chip color="primary">
+          C#
+        </ion-chip>
+
+        <ion-chip color="primary">
+          .NET
+        </ion-chip>
+
+        <ion-chip color="secondary">
+          React
+        </ion-chip>
+
+        <ion-chip color="secondary">
+          JavaScript
+        </ion-chip>
+
+        <ion-chip color="secondary">
+          Python
+        </ion-chip>
+
+        <ion-chip color="secondary">
+          APIs REST
+        </ion-chip>
+
+      </div>
+
+
+      <!-- BASES DE DATOS -->
+      <p>
+        <strong>Bases de Datos</strong>
+      </p>
+
+      <div class="chips-container ion-margin-bottom">
+
+        <ion-chip color="tertiary">
+          PostgreSQL
+        </ion-chip>
+
+        <ion-chip color="tertiary">
+          MySQL
+        </ion-chip>
+
+        <ion-chip color="tertiary">
+          Diseño de BD
+        </ion-chip>
+
+      </div>
+
+
+      <!-- SOPORTE -->
+      <p>
+        <strong>Soporte Técnico</strong>
+      </p>
+
+      <div class="chips-container ion-margin-bottom">
+
+        <ion-chip color="medium">
+          Mantenimiento de Hardware
+        </ion-chip>
+
+        <ion-chip color="medium">
+          Soporte de Software
+        </ion-chip>
+
+        <ion-chip color="medium">
+          Diagnóstico de Fallas
+        </ion-chip>
+
+        <ion-chip color="medium">
+          Soporte de Dispositivos Móviles
+        </ion-chip>
+
+      </div>
+
+
+      <!-- OTRAS -->
+      <p>
+        <strong>Otras Tecnologías</strong>
+      </p>
+
+      <div class="chips-container ion-margin-bottom">
+
+        <ion-chip color="dark">
+          Git / GitHub
+        </ion-chip>
+
+        <ion-chip color="dark">
+          Linux / Ubuntu
+        </ion-chip>
+
+        <ion-chip color="dark">
+          WhatsApp API
+        </ion-chip>
+
+        <ion-chip color="dark">
+          Automatización
+        </ion-chip>
+
+      </div>
+
+
+      <!-- IDIOMAS -->
+      <p>
+        <strong>Idiomas</strong>
+      </p>
+
+      <div class="chips-container">
+
+        <ion-chip color="tertiary">
+          Inglés B1 - Intermedio
+        </ion-chip>
+
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
 </ion-content>
